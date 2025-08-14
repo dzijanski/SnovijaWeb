@@ -1,15 +1,18 @@
+
+
+
 /* Define CSS variables for colors */
 :root {
-    --item-background-color: #26292f;
-    --header-color: #ecf9fb;
+    --item-background-color: #30251a;
+    --header-color: #e2e2e2;
     --border-color: #ffffff1a;
-    --background-color: #16181c;
-    --text-color: #b0bac5;
-    --paragraph-color: #c7cbcc;
-    --primary-color: #7e292a;
+    --background-color: #2c2219;
+    --text-color: #d4d4d4;
+    --paragraph-color: #f6f6f6;
+    --primary-color: #806144;
     --secondary-color: #ffb3b0;
-    --additional-color: #263b3f;
-    --linkhover: #8d383a;
+    --additional-color: #30251a;
+    --linkhover: #cd9d70;
 
     --small-border-radius: 0.25rem;
     --normal-border-radius: 0.3rem;
@@ -17,6 +20,8 @@
     --border-radius: 1rem;
 
   }
+
+
   
   /* Define CSS variables for font size */
   :root {
@@ -36,3 +41,15 @@
     --thick-font-weight: 500;
     --noraml-font-weight: 400;
   }
+
+
+
+/* Фоновое изображение */
+body {
+  background-image: url('https://i.imgur.com/tcPsQ0w.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--text-color);
+}

@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/scrollbar.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>СУМ - надіслати переклад</title>
+    <title>Сновія - прапанаваць пераклад</title>
     <meta name="description">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="css/cards.css">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/translation.css">
 
-    <link rel="icon" type=" image/x-icon" href="https://i.imgur.com/hJZwHlR.png">
+    <link rel="icon" type=" image/x-icon" href="icon.png">
 
 
     <link rel="stylesheet" href="css/var.css">
@@ -23,7 +23,7 @@
 <body>
     <div class="header">
         <a href="index" class="logo">
-            <img src="title2.png" alt="Logo" width="145" height="35">
+            <img src="title2.png" alt="Logo" width="145" height="39">
             <style>
               .logo img {
                 border-radius: 20px;
@@ -46,34 +46,34 @@
     <div id="AddItemContainer" class="AddItemContainer">
         <div class="form">
             <form id="TranslationForm">
-                <label for="entry.1605450482">Назва перекладеного <span class="required" alt="Обов'язкове поле" title="Обов'язкове поле">*</span></label>
+                <label for="entry.1605450482">Назва перакладзенага <span class="required" alt="Абавязковае поле" title="Абавязковае поле">*</span></label>
                 <input id="ItemName" type="text" name="entry.1605450482" required>
-                <label for="entry.2129753653">Ваше ім'я/назва команди <span class="required" alt="Обов'язкове поле" title="Обов'язкове поле">*</span></label>
+                <label for="entry.2129753653">Ваша імя/назва каманды <span class="required" alt="Абавязковае поле" title="Абавязковае поле">*</span></label>
                 <input id="Name" type="text" name="entry.2129753653" required>
-                <label for="entry.112020502">Значок/логотип перекладеного <span class="required" alt="Обов'язкове поле" title="Обов'язкове поле">*</span></label>
+                <label for="entry.112020502">Перакладзены значок/лагатып <span class="required" alt="Абавязковае поле" title="Абавязковае поле">*</span></label>
                 <input id="Image" type="text" name="entry.112020502" required>
-                <label for="entry.500673411">Посилання на гру/мод(можна декілька) <span class="required" alt="Обов'язкове поле" title="Обов'язкове поле">*</span></label>
+                <label for="entry.500673411">Спасылка на гульню/мод (можна некалькі) <span class="required" alt="Абавязковае поле" title="Абавязковае поле">*</span></label>
                 <input id="GMUrl" type="text" name="entry.500673411">
-                <label for="entry.56713701">Посилання на переклад <span class="info" alt="Не обов'язкове поле якщо ваш переклад додано до перекладеного" title="Не обов'язкове поле якщо ваш переклад додано до перекладеного">?</span><span style="color: green; margin-left: 5px;" class="info" alt="можна надсилати декілька посилань через пробіли" title="можна надсилати декілька посилань через пробіли">?</span> </label>
+                <label for="entry.56713701">Спасылка на пераклад <span class="info" alt="Неабавязковае поле, калі ваш пераклад дадаецца да перакладзенага" title="Неабавязковае поле, калі ваш пераклад дадаецца да перакладзенага">?</span><span style="color: green; margin-left: 5px;" class="info" alt="вы можаце адправіць некалькі спасылак, падзяліўшы іх прабеламі" title="вы можаце адправіць некалькі спасылак, падзяліўшы іх прабеламі">?</span> </label>
                 <input id="TrnalstionLink" type="text" name="entry.56713701">
-                <label id="added" for="entry.666320625" required>Чи додали ваш переклад офіційно <span class="required"
-                        alt="Обов'язкове поле" title="Обов'язкове поле">*</span></label>
+                <label id="added" for="entry.666320625" required>Ці быў ваш пераклад афіцыйна дададзены? <span class="required"
+                        alt="Абавязковае поле" title="Абавязковае поле">*</span></label>
                 <div class="radio">
                     <label for="entry.666320625">Так</label>
                     <input value="True" type="radio" name="entry.666320625">
-                    <label for="entry.666320625">Ні</label>
+                    <label for="entry.666320625">Не</label>
                     <input value="False" type="radio" name="entry.666320625">
                 </div>
-                <label for="entry.785774625">Контакти та додаткова інформація<span class="required" alt="Обов'язкове поле"
-                        title="Обов'язкове поле">*</span> </label>
+                <label for="entry.785774625">Кантакты і дадатковая інфармацыя<span class="required" alt="Абавязковае поле"
+                        title="Абавязковае поле">*</span> </label>
                 <textarea id="Contact" type="text" name="entry.785774625" required></textarea>
                 <div class="processingCont">
                     <input type="checkbox" name="Processing " id="Processing" required>
-                    <div class="Processing">Я дозволяю обробку даних та їх використання на сайті СУМ
-                        <span class="required" alt="Обов'язкове поле" title="Обов'язкове поле">*</span>
+                    <div class="Processing">Я даю згоду на апрацоўку дадзеных і іх выкарыстанне на сайце Snovija
+                        <span class="required" alt="Абавязковае поле" title="Абавязковае поле">*</span>
                     </div>
                 </div>
-                <button id="submit" type="submit" class="submit hbtn">Надіслати</button>
+                <button id="submit" type="submit" class="submit hbtn">Адправіць</button>
             </form>
         </div>
     </div>
@@ -180,9 +180,8 @@
 
     <div class="footer">
         <div class="footertext">
-            <div class="infotext">© 2025 Спільнота українізації модів</div>
-            <div class="infotext">Створив MEGATREX4 з 💜 до вас</div>
-            <div class="infotext">THIS PRODUCT IS NOT SUPPORTED BY OR AFFILIATED WITH MOJANG MICROSOFT OR STEAM.</div>
+            <div class="infotext">© 2025 Snovija Studios Translates</div>
+            <div class="infotext">Зроблена з гонарам для беларусаў! ❤</div>
         </div>
         <script type="module" src="js/countTranslations.js"></script>
 
