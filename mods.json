@@ -3482,5 +3482,33 @@
         ],
         "id": "000213",
         "date": "05/04/2025 14:32:42"
+    },
+    {
+        "title": "Ad Astra",
+        "gameversion": "Fabric",
+        "engine": "1.20.1",
+        "categories": [
+            "Прыгоды",
+            "Абсталяванне",
+            "Гульнявыя механікі",
+            "Кіраванне",
+            "Захоўванне",
+            "Тэхналогіі",
+            "Транспарт",
+            "Змяненні свету"
+        ],
+        "description": "Ad Astra! (пераклад: «Да зорак!») — гэта касмічны мод для Fabric and Forge, прысвечаны тэхналогіям, падарожжам і даследаванням. У нас ёсць усё неабходнае, каб стаць касманаўтам: ракеты, скафандры, касмічныя станцыі і машыны. Чаму б не прагуляцца па Месяцы? Пабудаваць самадастатковы бункер на Марсе? Пашукаць карысныя выкапні на Венеры? Уся Сонечная сістэма, а яшчэ лепш — Млечны Шлях, у вашым распараджэнні!",
+        "image": "https://cdn.modrinth.com/data/3ufwT9JF/2e903114b7d89b5e1adc7e15dcfd1ba7a1c59505_96.webp",
+        "verified": false,
+        "author": "Snovija Team ",
+        "completed": true,
+        "translation": "",
+        "link": [
+            "https://modrinth.com/mod/ad-astra",
+            "https://www.curseforge.com/minecraft/mc-mods/ad-astra",
+            "https://github.com/terrarium-earth/Ad-Astra"
+        ],
+        "id": "000214",
+        "date": "18 жні 2025 15:10"
     }
 ]
