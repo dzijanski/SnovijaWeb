@@ -30,9 +30,9 @@ function createModCard(mod) {
 
   card.innerHTML = `
     <div class="TopCardContainer">
-      <div class="cardimage" style="background-image: url('${mod.image}')" title="Зображення ${mod.title}" style="max-width: 100%;"></div>
+      <div class="cardimage" style="background-image: url('${mod.image}')" title="Выява ${mod.title}" style="max-width: 100%;"></div>
       <div id="${mod.id}" class="textContainer">
-        <h2 title="${mod.title} українською" class="modtitle">${truncateText(mod.title, 35)}</h2>
+        <h2 title="${mod.title} па-беларуску" class="modtitle">${truncateText(mod.title, 35)}</h2>
         <p>від <span title="${mod.author}" class="author">${truncateText(mod.author, 35)}</span></p>
       </div>
     </div>
@@ -182,8 +182,8 @@ function displayCards(currentPage, pageSize, data) {
       cardsContainer.innerHTML = `
       <div class="ItemContainerInfo">
             <img src="https://i.imgur.com/yXSBdgZ.png" height="300px" alt="Зображення ''щось не так''">
-            <div class="text404">Дідько, щось сталось не так.</div>
-            <div class="text404">Спробуйте змінити фільтри.</div>
+            <div class="text404">Ой, нічога не знойдзена :(</div>
+            <div class="text404">Паспрабуйце змяніць фільтры.</div>
 
         </div>`;
     }
@@ -310,11 +310,11 @@ function FetchFilterIcons() {
 
 
 const filterDisplayNames = {
-  Mods: { name: 'Моди', icon: 'icon/minecraft.svg', title: 'Моди' },
-  Other: { name: 'Інші', icon: 'icon/other.svg', title: 'Інші' },
-  Official: { name: 'Офіційні', icon: 'icon/verified.svg', title: 'Офіційні' },
-  FromMembers: { name: 'Від учасників', icon: 'icon/frommembers.svg', title: 'Від учасників' },
-  NotCompleted: { name: 'У роботі', icon: 'icon/completed.svg', title: 'У роботі' },
+  Mods: { name: 'Моды', icon: 'icon/minecraft.svg', title: 'Моды' },
+  Other: { name: 'Іншыя', icon: 'icon/other.svg', title: 'Іншыя' },
+  Official: { name: 'Афіцыйныя', icon: 'icon/verified.svg', title: 'Афіцыйныя' },
+  FromMembers: { name: 'Ад удзельнікаў', icon: 'icon/frommembers.svg', title: 'Ад удзельнікаў' },
+  NotCompleted: { name: 'Не завершаны', icon: 'icon/completed.svg', title: 'Перакладаецца' },
 };
 
 
@@ -349,7 +349,7 @@ function createFilterInputs(authors) {
   const filters = Object.keys(filterDisplayNames);
 
   const modsHeader = document.createElement('div');
-  modsHeader.textContent = 'Тип контенту';
+  modsHeader.textContent = 'Тып кантэнту';
   modsHeader.classList.add('filter-header');
   filtersForm.appendChild(modsHeader);
 
@@ -362,7 +362,7 @@ function createFilterInputs(authors) {
   filtersForm.appendChild(otherContainer);
 
   const otherHeader = document.createElement('div');
-  otherHeader.textContent = 'Розширені';
+  otherHeader.textContent = 'Пашыраны';
   otherHeader.classList.add('filter-header');
   filtersForm.appendChild(otherHeader);
 
@@ -438,7 +438,7 @@ function updateTotalTranslation(mods, other) {
 
     if (totalTranslationSpan) {
       const totalTranslations = mods.length + other.length;
-      totalTranslationSpan.textContent = `Спільнота переклала: ${totalTranslations}`;
+      totalTranslationSpan.textContent = `Модаў перакладзена: ${totalTranslations}`;
     } else {
       console.error("Error: TotalTranslation span not found!");
     }
