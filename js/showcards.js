@@ -33,7 +33,7 @@ function createModCard(mod) {
       <div class="cardimage" style="background-image: url('${mod.image}')" title="Выява ${mod.title}" style="max-width: 100%;"></div>
       <div id="${mod.id}" class="textContainer">
         <h2 title="${mod.title} па-беларуску" class="modtitle">${truncateText(mod.title, 35)}</h2>
-        <p>від <span title="${mod.author}" class="author">${truncateText(mod.author, 35)}</span></p>
+        <p>ад <span title="${mod.author}" class="author">${truncateText(mod.author, 35)}</span></p>
       </div>
     </div>
   `;
