@@ -203,14 +203,14 @@ function updatePageMeta(selectedItem) {
                 const { selectedItem, modsData, otherData } = await fetchItemData(itemId);
     
                 if (selectedItem) {
-                    document.title = "СУМ" + " - переклад " + selectedItem.title;
+                    document.title = "Сновія" + " - переклад " + selectedItem.title;
     
                     const categoryIcons = await fetchCategoryIcons();
     
                     updatePageMeta(selectedItem)
     
                     // Create HTML string for tooltip content
-                    const tooltipContent = selectedItem.tooltip ? selectedItem.tooltip : (selectedItem.verified ? 'Переклад вже в грі! Завантаження додаткових файлів не потрібно. Насолоджуйтеся грою з українською локалізацією!' : '');
+                    const tooltipContent = selectedItem.tooltip ? selectedItem.tooltip : (selectedItem.verified ? 'Пераклад ужо ёсць у гульні! Не трэба спампоўваць дадатковыя файлы. Атрымлівайце асалоду ад гульні з беларускай лакалізацыяй!' : '');
     
                     // Create HTML string for tooltip
                     const tooltipHTML = tooltipContent
@@ -226,14 +226,14 @@ function updatePageMeta(selectedItem) {
                     
 
                     // Determine the game version text
-                    const gameVersionText = selectedItem.gameversion && selectedItem.gameversion.length > 0 ? `<p class="gameversion iteminfo">Версія гри: ${selectedItem.gameversion}</p>` : '';
-                    const engineText = selectedItem.engine && selectedItem.engine.length > 0 ? `<p class="engine iteminfo">Рушій: ${selectedItem.engine}</p>` : '';
+                    const gameVersionText = selectedItem.gameversion && selectedItem.gameversion.length > 0 ? `<p class="gameversion iteminfo">Вэрсія гульні: ${selectedItem.gameversion}</p>` : '';
+                    const engineText = selectedItem.engine && selectedItem.engine.length > 0 ? `<p class="engine iteminfo">Рухавік: ${selectedItem.engine}</p>` : '';
 
                     // if item has date
-                    const dateText = selectedItem.date && selectedItem.date.length > 0 ? `<p class="date iteminfo">Інформація від ${selectedItem.date}</p>` : '';
+                    const dateText = selectedItem.date && selectedItem.date.length > 0 ? `<p class="date iteminfo">Актуальна на: ${selectedItem.date}</p>` : '';
     
                     const categoriesText = selectedItem.categories && selectedItem.categories.length > 0 ? `
-                        <div class="categories iteminfo">Категорії:&nbsp; 
+                        <div class="categories iteminfo">Катэгорыі:&nbsp; 
                             ${selectedItem.categories.map(category => {
                                 const categoryIcon = categoryIcons.find(icon => icon.title === category);
                                 // Generate a random color within a range
@@ -271,7 +271,7 @@ function updatePageMeta(selectedItem) {
                                 ${gameVersionText}
                                 ${engineText}
                                 ${categoriesText}
-                                <p class="itemtranslator">Автори перекладу: ${selectedItem.author}</p>
+                                <p class="itemtranslator">Аўтары перакладу: ${selectedItem.author}</p>
                                 ${dateText}
                             </div>
                             </div>
