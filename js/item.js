@@ -161,7 +161,7 @@ async function fetchCategoryIcons() {
 }
 
 function updatePageMeta(selectedItem) {
-    document.title = "СУМ" + " - переклад " + selectedItem.title;
+    document.title = "Сновія" + " - переклад " + selectedItem.title;
 
     const cleanedDescription = selectedItem.description
     .replace(/^-{3,}\s*$/gm, '')               // Remove horizontal rules
@@ -178,9 +178,9 @@ function updatePageMeta(selectedItem) {
     const metaTags = [
         { name: 'description', content: cleanedDescription },
         { property: 'og:description', content: truncateText(cleanedDescription, 120) },
-        { property: 'og:title', content: "СУМ" + " - переклад " + selectedItem.title },
+        { property: 'og:title', content: "Сновія" + " - переклад " + selectedItem.title },
         { name: 'twitter:description', content: truncateText(cleanedDescription, 120) },
-        { name: 'twitter:title', content: "СУМ" + " - переклад " + selectedItem.title }
+        { name: 'twitter:title', content: "Сновія" + " - переклад " + selectedItem.title }
     ];
 
     metaTags.forEach(tag => {
