@@ -3485,8 +3485,8 @@
     },
     {
         "title": "Ad Astra",
-        "gameversion": "Fabric",
-        "engine": "1.20.1",
+        "gameversion": "1.20.1",
+        "engine": "Fabric",
         "categories": [
             "Прыгоды",
             "Абсталяванне",
