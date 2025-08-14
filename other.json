@@ -1,0 +1,24 @@
+[
+    {
+        "title": "EasyLauncher",
+        "description": "Адкрыйце для сябе бязмежныя магчымасці для творчасці і выжывання ва ўнікальнай кубічнай сусвету.",
+        "image": "https://easylauncher.org/themes/easylauncher/assets/images/services/easylauncher-light.svg",
+        "author": "Snovija Team",
+        "completed": true,
+        "id": "000128",
+        "translation": "https://crowdin.com/project/60secondsua",
+        "link": [
+            "https://store.steampowered.com/app/368360/60_Seconds/#000128",
+            "https://mega.nz/file/sA030Dpa#PafcVq37VPFJ-XjWbjmbRgfoQVB_dLOVHO96SJtBevA"
+        ],
+        "gameversion": "",
+        "verified": false,
+        "engine": "Unity",
+        "categories": [
+            "Виживання",
+            "Постапокаліптика",
+            "Інді"
+        ],
+        "date": "06/09/2024 01:08:35"
+    }
+]
